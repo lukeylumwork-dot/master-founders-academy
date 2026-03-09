@@ -4,6 +4,7 @@ import Hero from "@/components/sections/Hero";
 import Pillars from "@/components/sections/Pillars";
 import EducationPricing from "@/components/sections/EducationPricing";
 import AcademyPricing from "@/components/sections/AcademyPricing";
+import FAQ from "@/components/sections/FAQ";
 import FeaturedReflection from "@/components/sections/FeaturedReflection";
 import About from "@/components/sections/About";
 import ClosingCTA from "@/components/sections/ClosingCTA";
