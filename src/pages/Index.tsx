@@ -18,6 +18,7 @@ const Index = () => {
         <Pillars />
         <EducationPricing />
         <AcademyPricing />
+        <FAQ />
         <FeaturedReflection />
         <About />
         <ClosingCTA />
