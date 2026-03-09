@@ -2,6 +2,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import Pillars from "@/components/sections/Pillars";
+import EducationPricing from "@/components/sections/EducationPricing";
 import AcademyPricing from "@/components/sections/AcademyPricing";
 import FeaturedReflection from "@/components/sections/FeaturedReflection";
 import About from "@/components/sections/About";
@@ -14,6 +15,7 @@ const Index = () => {
       <main>
         <Hero />
         <Pillars />
+        <EducationPricing />
         <AcademyPricing />
         <FeaturedReflection />
         <About />
