@@ -15,6 +15,7 @@ const Index = () => {
       <main>
         <Hero />
         <Pillars />
+        <EducationPricing />
         <AcademyPricing />
         <FeaturedReflection />
         <About />
