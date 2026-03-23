@@ -32,7 +32,7 @@ const About = () => {
               </p>
               
               <p>
-                Founder's Lens exists because I wish something like it had existed for me. 
+                Master Founders Academy exists because I wish something like it had existed for me. 
                 Not a community promising connection. Not motivational content disguised 
                 as education. Just practical, honest material from someone who's been 
                 through it—designed to be a companion for the long journey ahead.
@@ -43,10 +43,10 @@ const About = () => {
             <div className="mt-12 pt-8 border-t border-border">
               <div className="flex items-center gap-6">
                 <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center">
-                  <span className="font-serif text-xl text-accent">JM</span>
+                  <span className="font-serif text-xl text-accent">GC</span>
                 </div>
                 <div>
-                  <p className="font-serif text-xl text-foreground">James Mitchell</p>
+                  <p className="font-serif text-xl text-foreground">Gareth Cadwallader</p>
                   <p className="text-muted-foreground">Founder & Guide</p>
                 </div>
               </div>

@@ -11,7 +11,7 @@ const Footer = () => {
               to="/" 
               className="font-serif text-2xl tracking-tight text-foreground"
             >
-              Founder's Lens
+              Master Founders Academy
             </Link>
             <p className="mt-4 text-muted-foreground max-w-md leading-relaxed">
               Practical guidance for SaaS founders, grounded in lived experience. 
@@ -67,7 +67,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Founder's Lens. All rights reserved.
+            © {new Date().getFullYear()} Master Founders Academy. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground italic font-serif">
             Built from experience, not theory.

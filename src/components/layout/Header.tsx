@@ -23,7 +23,7 @@ const Header = () => {
             to="/" 
             className="font-serif text-xl lg:text-2xl tracking-tight text-foreground hover:text-accent transition-colors duration-300"
           >
-            Founder's Lens
+            Master Founders Academy
           </Link>
 
           {/* Desktop Navigation */}
