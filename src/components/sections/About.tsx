@@ -46,7 +46,7 @@ const About = () => {
                   <span className="font-serif text-xl text-accent">JM</span>
                 </div>
                 <div>
-                  <p className="font-serif text-xl text-foreground">James Mitchell</p>
+                  <p className="font-serif text-xl text-foreground">Gareth Cadwallader</p>
                   <p className="text-muted-foreground">Founder & Guide</p>
                 </div>
               </div>
