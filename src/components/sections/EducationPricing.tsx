@@ -109,11 +109,8 @@ const EducationPricing = () => {
             </div>
 
             <div className="bg-secondary/50 p-6 border-l-2 border-accent">
-              <p className="font-serif text-lg text-foreground italic mb-2">
-                "I wish I'd had this before my first board meeting. The negotiation module alone changed how I approach every conversation."
-              </p>
-              <p className="text-sm text-muted-foreground">
-                — Pre-seed founder, 6 months in
+              <p className="font-serif text-lg text-muted-foreground italic">
+                [Testimonial coming soon]
               </p>
             </div>
 

@@ -78,7 +78,7 @@ const AcademyPricing = () => {
                 Apply for the next cohort
               </Button>
               <p className="text-center text-sm text-muted-foreground">
-                Applications reviewed monthly. Next cohort begins April 2026.
+                Applications reviewed monthly. Join today.
               </p>
             </div>
           </div>

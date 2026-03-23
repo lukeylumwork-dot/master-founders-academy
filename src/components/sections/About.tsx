@@ -43,7 +43,7 @@ const About = () => {
             <div className="mt-12 pt-8 border-t border-border">
               <div className="flex items-center gap-6">
                 <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center">
-                  <span className="font-serif text-xl text-accent">JM</span>
+                  <span className="font-serif text-xl text-accent">GC</span>
                 </div>
                 <div>
                   <p className="font-serif text-xl text-foreground">Gareth Cadwallader</p>
