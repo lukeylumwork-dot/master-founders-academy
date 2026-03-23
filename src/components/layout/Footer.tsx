@@ -11,7 +11,7 @@ const Footer = () => {
               to="/" 
               className="font-serif text-2xl tracking-tight text-foreground"
             >
-              Founder's Lens
+              Master Founders Academy
             </Link>
             <p className="mt-4 text-muted-foreground max-w-md leading-relaxed">
               Practical guidance for SaaS founders, grounded in lived experience. 
