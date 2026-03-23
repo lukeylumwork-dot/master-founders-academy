@@ -74,8 +74,8 @@ const AcademyPricing = () => {
             </div>
 
             <div className="space-y-3">
-              <Button variant="accent" size="lg" className="w-full justify-center">
-                Apply for the next cohort
+              <Button variant="accent" size="lg" className="w-full justify-center" asChild>
+                <a href="mailto:hello@founderslens.com?subject=Academy%20Application">Apply for the next cohort</a>
               </Button>
               <p className="text-center text-sm text-muted-foreground">
                 Applications reviewed monthly. Join today.

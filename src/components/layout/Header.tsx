@@ -4,8 +4,8 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
-  { label: "Education", href: "#education" },
-  { label: "Academy", href: "#academy" },
+  { label: "Education", href: "#education-pricing" },
+  { label: "Academy", href: "#academy-pricing" },
   { label: "Reflections", href: "#reflections" },
   { label: "Conversations", href: "#conversations" },
   { label: "About", href: "#about" },
@@ -42,8 +42,8 @@ const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden lg:block">
-            <Button variant="editorial" size="sm">
-              Begin Learning
+            <Button variant="accent" size="sm" asChild>
+              <a href="#education-pricing">Begin Learning</a>
             </Button>
           </div>
 
@@ -75,8 +75,8 @@ const Header = () => {
                 </li>
               ))}
               <li className="pt-4 border-t border-border">
-                <Button variant="editorial" className="w-full justify-center">
-                  Begin Learning
+                <Button variant="accent" className="w-full justify-center" asChild>
+                  <a href="#education-pricing" onClick={() => setIsMenuOpen(false)}>Begin Learning</a>
                 </Button>
               </li>
             </ul>

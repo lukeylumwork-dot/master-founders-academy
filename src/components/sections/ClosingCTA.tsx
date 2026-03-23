@@ -20,9 +20,11 @@ const ClosingCTA = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="default" size="xl" className="group">
-              Explore Foundational Education
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+            <Button variant="default" size="xl" className="group" asChild>
+              <a href="#education-pricing">
+                Explore Foundational Education
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </a>
             </Button>
             
             <a 

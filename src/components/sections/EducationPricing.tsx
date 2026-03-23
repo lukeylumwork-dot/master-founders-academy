@@ -74,8 +74,8 @@ const EducationPricing = () => {
             </div>
 
             <div className="space-y-3">
-              <Button variant="accent" size="lg" className="w-full justify-center">
-                Start learning today
+              <Button variant="accent" size="lg" className="w-full justify-center" asChild>
+                <a href="mailto:hello@founderslens.com">Start learning today</a>
               </Button>
               <p className="text-center text-sm text-muted-foreground">
                 Instant access. No application required.
@@ -106,12 +106,6 @@ const EducationPricing = () => {
                   </div>
                 </div>
               ))}
-            </div>
-
-            <div className="bg-secondary/50 p-6 border-l-2 border-accent">
-              <p className="font-serif text-lg text-muted-foreground italic">
-                [Testimonial coming soon]
-              </p>
             </div>
 
             <div className="pt-4">

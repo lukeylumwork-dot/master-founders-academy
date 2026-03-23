@@ -2,7 +2,7 @@ import { Play, Clock } from "lucide-react";
 
 const FeaturedReflection = () => {
   return (
-    <section className="py-section">
+    <section id="reflections" className="py-section">
       <div className="section-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Content */}
@@ -60,7 +60,7 @@ const FeaturedReflection = () => {
             </div>
             
             {/* Quote overlay */}
-            <div className="absolute -bottom-6 -left-6 lg:-bottom-8 lg:-left-8 bg-background p-6 lg:p-8 border border-border max-w-xs">
+            <div className="relative mt-4 lg:absolute lg:mt-0 lg:-bottom-8 lg:-left-8 bg-background p-6 lg:p-8 border border-border max-w-xs">
               <p className="font-serif text-lg italic text-foreground leading-relaxed">
                 "The decisions that matter most rarely feel urgent in the moment."
               </p>

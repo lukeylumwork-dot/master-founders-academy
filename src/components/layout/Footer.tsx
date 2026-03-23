@@ -24,12 +24,12 @@ const Footer = () => {
             <h4 className="font-serif text-lg mb-4 text-foreground">Explore</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#education" className="text-muted-foreground hover:text-accent transition-colors duration-300">
+                <a href="#education-pricing" className="text-muted-foreground hover:text-accent transition-colors duration-300">
                   Foundational Education
                 </a>
               </li>
               <li>
-                <a href="#academy" className="text-muted-foreground hover:text-accent transition-colors duration-300">
+                <a href="#academy-pricing" className="text-muted-foreground hover:text-accent transition-colors duration-300">
                   Advanced Academy
                 </a>
               </li>
