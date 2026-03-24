@@ -1,32 +1,7 @@
-import { Check, Users, Calendar, BookOpen } from "lucide-react";
+import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const included = [
-  "12-month structured programme",
-  "Monthly live sessions with peers",
-  "Private community of later-stage founders",
-  "1:1 advisory calls (quarterly)",
-  "Full access to Foundational Education library",
-  "Early access to new Reflections content",
-];
-
-const outcomes = [
-  {
-    icon: Users,
-    title: "Peer cohort",
-    description: "Join a carefully selected group of 12 founders navigating similar challenges",
-  },
-  {
-    icon: Calendar,
-    title: "Structured cadence",
-    description: "Monthly themes covering scaling, org design, and strategic trade-offs",
-  },
-  {
-    icon: BookOpen,
-    title: "Applied learning",
-    description: "Work through real decisions with experienced guidance, not theoretical frameworks",
-  },
-];
+import { academyIncluded, academyOutcomes, academyTestimonial } from "@/data/pricing";
+import { trackEvent } from "@/lib/analytics";
 
 const AcademyPricing = () => {
   return (
@@ -64,7 +39,7 @@ const AcademyPricing = () => {
             <div className="mb-8">
               <p className="font-medium text-foreground mb-4">What's included</p>
               <ul className="space-y-3">
-                {included.map((item) => (
+                {academyIncluded.map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-accent mt-0.5 shrink-0" />
                     <span className="text-muted-foreground">{item}</span>
@@ -74,7 +49,12 @@ const AcademyPricing = () => {
             </div>
 
             <div className="space-y-3">
-              <Button variant="accent" size="lg" className="w-full justify-center">
+              <Button
+                variant="accent"
+                size="lg"
+                className="w-full justify-center"
+                onClick={() => trackEvent("cta_click", { tier: "academy", location: "pricing_card" })}
+              >
                 Apply for the next cohort
               </Button>
               <p className="text-center text-sm text-muted-foreground">
@@ -95,7 +75,7 @@ const AcademyPricing = () => {
             </div>
 
             <div className="space-y-6">
-              {outcomes.map((outcome) => (
+              {academyOutcomes.map((outcome) => (
                 <div key={outcome.title} className="flex gap-4">
                   <div className="w-10 h-10 flex items-center justify-center bg-secondary rounded-sm shrink-0">
                     <outcome.icon className="w-5 h-5 text-accent" />
@@ -110,10 +90,10 @@ const AcademyPricing = () => {
 
             <div className="bg-secondary/50 p-6 border-l-2 border-accent">
               <p className="font-serif text-lg text-foreground italic mb-2">
-                "The value isn't the frameworks—it's having people who understand the weight of the decisions you're making."
+                "{academyTestimonial.quote}"
               </p>
               <p className="text-sm text-muted-foreground">
-                — Academy cohort member, Series A founder
+                — {academyTestimonial.attribution}
               </p>
             </div>
 
