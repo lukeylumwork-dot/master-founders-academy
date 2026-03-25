@@ -1,32 +1,7 @@
-import { Check, PlayCircle, FileText, Lightbulb } from "lucide-react";
+import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const included = [
-  "Full library of pre-recorded training modules",
-  "Decision making, storytelling, and negotiation",
-  "Practical problem-solving frameworks",
-  "Downloadable worksheets and templates",
-  "New modules added quarterly",
-  "Access to the Reflections archive",
-];
-
-const outcomes = [
-  {
-    icon: PlayCircle,
-    title: "Learn at your pace",
-    description: "Structured modules you can revisit whenever you need them—no cohort schedule to follow",
-  },
-  {
-    icon: FileText,
-    title: "Built from real scenarios",
-    description: "Every lesson grounded in actual decisions founders face, not abstract business theory",
-  },
-  {
-    icon: Lightbulb,
-    title: "Principle-led thinking",
-    description: "Develop lasting mental models rather than tactics that expire with the next trend",
-  },
-];
+import { educationIncluded, educationOutcomes, educationTestimonial } from "@/data/pricing";
+import { trackEvent } from "@/lib/analytics";
 
 const EducationPricing = () => {
   return (
@@ -64,7 +39,7 @@ const EducationPricing = () => {
             <div className="mb-8">
               <p className="font-medium text-foreground mb-4">What's included</p>
               <ul className="space-y-3">
-                {included.map((item) => (
+                {educationIncluded.map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-accent mt-0.5 shrink-0" />
                     <span className="text-muted-foreground">{item}</span>
@@ -74,7 +49,12 @@ const EducationPricing = () => {
             </div>
 
             <div className="space-y-3">
-              <Button variant="accent" size="lg" className="w-full justify-center">
+              <Button
+                variant="accent"
+                size="lg"
+                className="w-full justify-center"
+                onClick={() => trackEvent("cta_click", { tier: "education", location: "pricing_card" })}
+              >
                 Start learning today
               </Button>
               <p className="text-center text-sm text-muted-foreground">
@@ -95,7 +75,7 @@ const EducationPricing = () => {
             </div>
 
             <div className="space-y-6">
-              {outcomes.map((outcome) => (
+              {educationOutcomes.map((outcome) => (
                 <div key={outcome.title} className="flex gap-4">
                   <div className="w-10 h-10 flex items-center justify-center bg-secondary rounded-sm shrink-0">
                     <outcome.icon className="w-5 h-5 text-accent" />
@@ -109,8 +89,11 @@ const EducationPricing = () => {
             </div>
 
             <div className="bg-secondary/50 p-6 border-l-2 border-accent">
-              <p className="font-serif text-lg text-muted-foreground italic">
-                [Testimonial coming soon]
+              <p className="font-serif text-lg text-foreground italic mb-2">
+                "{educationTestimonial.quote}"
+              </p>
+              <p className="text-sm text-muted-foreground">
+                — {educationTestimonial.attribution}
               </p>
             </div>
 

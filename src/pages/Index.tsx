@@ -8,6 +8,7 @@ import FAQ from "@/components/sections/FAQ";
 import FeaturedReflection from "@/components/sections/FeaturedReflection";
 import About from "@/components/sections/About";
 import ClosingCTA from "@/components/sections/ClosingCTA";
+import WaitlistForm from "@/components/sections/WaitlistForm";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
         <FAQ />
         <FeaturedReflection />
         <About />
+        <WaitlistForm />
         <ClosingCTA />
       </main>
       <Footer />
